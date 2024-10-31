@@ -2,11 +2,8 @@
 
 # Docker運行
 ```
-# 建構
+# 建構(需在根目錄下運行)
 docker build -t n9 . 
-
-# 運行(需在根目錄下運行)
-docker build -t n9 ./
 
 # 若第一次運行 無啟動 .air.toml  
 docker run -it --rm -v $(pwd):/app -p 18080:8080 n9 sh
@@ -16,11 +13,10 @@ docker run -it --rm -v $(pwd):/app -p 18080:8080 n9
  
 ```
 
-| Http Method | 說明 |
-|-------------|----|
-| GET         | 取得資料 |
-| POST         | 新增一筆資料 |
-| PUT         | 更新一筆資料 |
-| DELETE         | 資料刪除 |
 
-``````
+
+| 套件                                                      | 說明       |
+|---------------------------------------------------------|----------|
+| [validator](https://github.com/go-playground/validator) | Api接口驗證器 |
+| [swag](https://github.com/swaggo/swag)                  | 自動api文檔  |
+| [air](https://github.com/cosmtrek/air)   | 熱更新      |
