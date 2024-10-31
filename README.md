@@ -14,9 +14,9 @@ docker run -it --rm -v $(pwd):/app -p 18080:8080 n9
 ```
 
 ``` init
-air init 
 go mod init [專案名]
 go mod tidy
+air init 
 ```
 
 
