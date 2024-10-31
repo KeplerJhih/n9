@@ -17,6 +17,7 @@ RUN go install github.com/air-verse/air@latest && \
 
 WORKDIR /app
 
+RUN air init
 
 # 用於gin
 EXPOSE 8080
